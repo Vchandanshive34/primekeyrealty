@@ -1,204 +1,543 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prime Key Realty — Your Trusted Real Estate Partner</title>
-<meta name="description" content="Prime Key Realty helps you buy, sell, and find the right property, with honest guidance at every step.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
- 
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#top">
-      <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="7" cy="12" r="4.2"/>
-        <path d="M10.6 12h11.4M18 12v3.4M21.4 12v2.4"/>
-      </svg>
-      Prime Key Realty
-    </a>
- 
-    <input type="checkbox" id="nav-check" style="display:none;">
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
-      <a href="#Add Property">Add Property</a>
-      <a class="nav-cta" href="tel:9326395952">Call now</a>
-    </nav>
-    <label class="nav-toggle" for="nav-check" aria-label="Toggle menu"><span></span></label>
-  </div>
-</header>
- 
-<main id="top">
- 
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div>
-        <div class="hero-eyebrow">
-          <span class="rule"></span>
-          <span class="eyebrow">Real Estate, Done Right</span>
-        </div>
-        <h1>Every address<br>starts with the <em>right key</em>.</h1>
-        <p class="hero-lede">Prime Key Realty is your trusted partner for buying, selling, and renting property — honest advice, clear steps, and someone in your corner from first visit to closing day.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:9326395952">
-            <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px;">
-              <path d="M4 5c0 8 7 15 15 15l1.4-3.4a1 1 0 0 0-.6-1.3l-3.6-1.2a1 1 0 0 0-1 .3l-1 1.2a11.6 11.6 0 0 1-5.8-5.8l1.2-1a1 1 0 0 0 .3-1L8.7 4.6a1 1 0 0 0-1.3-.6L4 5Z"/>
-            </svg>
-            Call Prime Key Realty
-          </a>
-          <a class="btn btn-ghost" href="mailto:primekeyrealty3@gmail.com">Email us</a>
-        </div>
-      </div>
- 
-      <div class="hero-tag">
-        <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="7" cy="12" r="4.2"/>
-          <path d="M10.6 12h11.4M18 12v3.4M21.4 12v2.4"/>
-        </svg>
-        <p>We help people buy, sell, and find the right property — with guidance that puts your interests first.</p>
-        <div class="stamp">Trusted &middot; Local &middot; Reliable</div>
-      </div>
-    </div>
-  </section>
- 
-  <section class="about" id="about">
-    <div class="wrap about-grid">
-      <div>
-        <span class="eyebrow">About Us</span>
-        <p class="about-statement" style="margin-top:14px;">We believe finding a property should feel like <span class="brass">unlocking somewhere you belong</span> — not navigating a maze of paperwork and guesswork.</p>
-      </div>
-      <div class="about-points">
-        <div class="about-point">
-          <p class="label">Our Purpose</p>
-          <p class="desc">We help people buy, sell, and find the right property, guiding every step with honesty.</p>
-        </div>
-        <div class="about-point">
-          <p class="label">Our Approach</p>
-          <p class="desc">Clear communication and straight answers, so you always know where things stand.</p>
-        </div>
-        <div class="about-point">
-          <p class="label">Our Promise</p>
-          <p class="desc">Your interests come first, from the first conversation to the final handshake.</p>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <section id="services">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">What We Do</span>
-        <h2>Whatever stage you're at, we've got the key.</h2>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="7" cy="12" r="4.2"/>
-            <path d="M10.6 12h11.4M18 12v3.4M21.4 12v2.4"/>
-          </svg>
-          <h3>Buy</h3>
-          <p>Find a property that fits your life, with straightforward guidance from search to signing.</p>
-        </div>
-        <div class="service-card">
-          <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 12h9M13 12l-3.5-3.5M13 12l-3.5 3.5"/>
-            <circle cx="18" cy="12" r="3"/>
-          </svg>
-          <h3>Sell</h3>
-          <p>List and sell with a clear plan, priced right and presented well to reach serious buyers.</p>
-        </div>
-        <div class="service-card">
-          <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 20V10l6-6 6 6v10"/>
-            <path d="M10 20v-6h4v6"/>
-          </svg>
-          <h3>Rent</h3>
-          <p>Rent out or find a rental with terms you understand and support that doesn't disappear after signing.</p>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <section id="process">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">How It Works</span>
-        <h2>Three steps, start to close.</h2>
-      </div>
-      <div class="process-list">
-        <div class="process-step">
-          <span class="num">01 — Search</span>
-          <h3>Tell us what you need</h3>
-          <p>Share your budget, location, and must-haves — we shortlist what actually fits.</p>
-        </div>
-        <div class="process-step">
-          <span class="num">02 — Visit</span>
-          <h3>See it for yourself</h3>
-          <p>We arrange visits and walk you through the details, honestly, room by room.</p>
-        </div>
-        <div class="process-step">
-          <span class="num">03 — Close</span>
-          <h3>Make it official</h3>
-          <p>We help you through paperwork and negotiation, right up to the final handover.</p>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <div class="contact-panel">
-        <div class="contact-copy">
-          <span class="eyebrow">Get In Touch</span>
-          <h2 style="margin-top:14px;">Ready to find your key?</h2>
-          <p>Call or email us — we're happy to talk through what you're looking for, no obligation.</p>
-        </div>
-        <div class="keytag">
-          <div class="keytag-row">
-            <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4 5c0 8 7 15 15 15l1.4-3.4a1 1 0 0 0-.6-1.3l-3.6-1.2a1 1 0 0 0-1 .3l-1 1.2a11.6 11.6 0 0 1-5.8-5.8l1.2-1a1 1 0 0 0 .3-1L8.7 4.6a1 1 0 0 0-1.3-.6L4 5Z"/>
-            </svg>
-            <div>
-              <span class="lbl">Phone</span>
-              <a class="val" href="tel:93263959552">93263959552</a>
-            </div>
-          </div>
-          <div class="keytag-row">
-            <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M3 6h18v12H3z"/>
-              <path d="M3 6l9 7 9-7"/>
-            </svg>
-            <div>
-              <span class="lbl">Email</span>
-              <a class="val" href="mailto:primekeyrealty3@gmail.com">primekeyrealty3@gmail.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-</main>
- 
-<footer>
-  <div class="wrap footer-inner">
-    <a class="brand" href="#top">
-      <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="7" cy="12" r="4.2"/>
-        <path d="M10.6 12h11.4M18 12v3.4M21.4 12v2.4"/>
-      </svg>
-      Prime Key Realty
-    </a>
-    <span class="meta">&copy; 2026 Prime Key Realty. All rights reserved.</span>
-  </div>
-</footer>
- 
-</body>
-</html>
+/* ==========================================================
+   Prime Key Realty — Luxury Navy / White / Gold, with 3D depth
+   ========================================================== */
+
+:root{
+  --navy:#0b1b2e;
+  --navy-deep:#071322;
+  --navy-soft:#16293f;
+  --white:#ffffff;
+  --ivory:#f7f6f2;
+  --ivory-deep:#efece3;
+  --gold:#c6a15b;
+  --gold-light:#e6cf9e;
+  --gold-deep:#a3813f;
+  --slate:#6b7789;
+  --line: rgba(11,27,46,0.12);
+  --line-on-navy: rgba(255,255,255,0.14);
+  --radius: 4px;
+  --max: 1160px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--white);
+  color:var(--navy);
+  font-family:"Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{
+  font-family:"Fraunces", Georgia, serif;
+  font-weight:500;
+  margin:0;
+  letter-spacing:-0.01em;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;max-width:100%;}
+.eyebrow{
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.72rem;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--gold-deep);
+}
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 28px;
+}
+:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:3px;
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  html{scroll-behavior:auto;}
+}
+
+/* ---------- key icon ---------- */
+.key-glyph{width:18px;height:18px;flex-shrink:0;}
+.key-glyph circle{fill:none;stroke:currentColor;stroke-width:1.6;}
+.key-glyph path{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;}
+.key-spin{animation:key-spin 7s ease-in-out infinite;}
+@keyframes key-spin{
+  0%, 100%{transform:rotateY(0deg);}
+  50%{transform:rotateY(180deg);}
+}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;
+  top:0;
+  z-index:40;
+  background:rgba(255,255,255,0.94);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 0;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:"Fraunces", serif;
+  font-size:1.15rem;
+  font-weight:600;
+  color:var(--navy);
+}
+.brand .key-glyph{width:24px;height:24px;color:var(--gold);}
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:32px;
+  font-size:0.92rem;
+}
+.nav-links a{
+  position:relative;
+  padding:4px 0;
+  color:var(--navy-soft);
+}
+.nav-links a:hover{color:var(--navy);}
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0; bottom:-2px;
+  width:0; height:1px;
+  background:var(--gold);
+  transition:width .25s ease;
+}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--navy);
+  color:var(--white);
+  padding:10px 18px;
+  border-radius:var(--radius);
+  font-size:0.85rem;
+  font-weight:600;
+  letter-spacing:0.02em;
+  border:1px solid var(--navy);
+  box-shadow:0 3px 0 var(--navy-deep);
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.nav-cta:hover{background:var(--gold); border-color:var(--gold); color:var(--navy); transform:translateY(-1px); box-shadow:0 4px 0 var(--gold-deep);}
+.nav-cta:active{transform:translateY(2px); box-shadow:0 1px 0 var(--gold-deep);}
+.nav-toggle{display:none;}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:104px 0 90px;
+  perspective:1400px;
+  background:
+    radial-gradient(65% 90% at 88% 8%, rgba(198,161,91,0.18), transparent 60%),
+    radial-gradient(50% 60% at 10% 100%, rgba(198,161,91,0.08), transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 39px, var(--line-on-navy) 39px 40px),
+    repeating-linear-gradient(90deg, transparent 0 39px, var(--line-on-navy) 39px 40px),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+}
+.hero-inner{
+  display:grid;
+  grid-template-columns:1.15fr 0.85fr;
+  gap:56px;
+  align-items:end;
+}
+.hero h1{
+  font-size:clamp(2.4rem, 5vw, 4rem);
+  line-height:1.06;
+  color:var(--white);
+  text-shadow:0 2px 24px rgba(0,0,0,0.35);
+}
+.hero h1 em{
+  font-style:italic;
+  color:var(--gold-light);
+}
+.hero-eyebrow{margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.hero-eyebrow .rule{width:36px;height:1px;background:var(--gold);}
+.hero-eyebrow .eyebrow{color:var(--gold-light);}
+.hero-lede{
+  margin-top:22px;
+  max-width:46ch;
+  font-size:1.08rem;
+  color:rgba(255,255,255,0.72);
+}
+.hero-actions{
+  margin-top:34px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.hero-stats{
+  margin-top:44px;
+  display:flex;
+  gap:34px;
+}
+.hero-stat{display:flex; flex-direction:column; gap:4px;}
+.hero-stat .num{
+  font-family:"Fraunces", serif;
+  font-size:1.4rem;
+  color:var(--gold-light);
+}
+.hero-stat .lbl{
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.68rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.55);
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:14px 24px;
+  border-radius:var(--radius);
+  font-size:0.92rem;
+  font-weight:600;
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:transform .16s ease, box-shadow .16s ease, background .16s ease, color .16s ease, border-color .16s ease;
+}
+.btn-primary{background:var(--gold); color:var(--navy-deep); box-shadow:0 4px 0 var(--gold-deep), 0 14px 24px -12px rgba(198,161,91,0.55);}
+.btn-primary:hover{background:var(--gold-light); transform:translateY(-2px); box-shadow:0 6px 0 var(--gold-deep), 0 18px 28px -12px rgba(198,161,91,0.6);}
+.btn-primary:active{transform:translateY(2px); box-shadow:0 1px 0 var(--gold-deep);}
+.btn-ghost{border-color:rgba(255,255,255,0.55); color:var(--white); background:rgba(255,255,255,0.04);}
+.btn-ghost:hover{background:var(--white); color:var(--navy); border-color:var(--white); transform:translateY(-2px);}
+
+.hero-tag-wrap{ justify-self:end; perspective:1200px; }
+.hero-tag{
+  background:rgba(255,255,255,0.98);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:28px 26px;
+  max-width:280px;
+  transform:rotateY(-8deg) rotateX(3deg);
+  box-shadow:
+    26px 32px 0 -6px rgba(198,161,91,0.18),
+    0 30px 60px -18px rgba(0,0,0,0.6);
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+.hero-tag:hover{
+  transform:rotateY(0deg) rotateX(0deg) translateY(-4px);
+  box-shadow:0 34px 64px -18px rgba(0,0,0,0.55);
+}
+.hero-tag .key-glyph{width:30px;height:30px;color:var(--gold);margin-bottom:14px;}
+.hero-tag p{
+  font-size:0.95rem;
+  color:var(--navy-soft);
+  margin:0;
+}
+.hero-tag .stamp{
+  margin-top:16px;
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.72rem;
+  color:var(--gold-deep);
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  border-top:1px dashed var(--line);
+  padding-top:14px;
+}
+
+/* ---------- section basics ---------- */
+section{padding:88px 0;}
+.section-head{
+  max-width:640px;
+  margin-bottom:52px;
+}
+.section-head h2{
+  font-size:clamp(1.7rem, 3vw, 2.3rem);
+  margin-top:14px;
+  color:var(--navy);
+}
+.section-note{
+  margin-top:14px;
+  color:var(--slate);
+  font-size:0.92rem;
+}
+
+/* ---------- about ---------- */
+.about{ background:var(--ivory); color:var(--navy); }
+.about .eyebrow{color:var(--gold-deep);}
+.about-grid{ display:grid; grid-template-columns:1.2fr 1fr; gap:64px; align-items:start; }
+.about-statement{
+  font-family:"Fraunces", serif;
+  font-weight:400;
+  font-size:clamp(1.4rem, 2.6vw, 1.9rem);
+  line-height:1.42;
+  color:var(--navy);
+}
+.about-statement .brass{color:var(--gold-deep); font-style:italic;}
+.about-points{ display:flex; flex-direction:column; gap:26px; border-left:1px solid var(--line); padding-left:28px; }
+.about-point p.label{
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--gold-deep);
+  margin:0 0 6px;
+}
+.about-point p.desc{ margin:0; color:var(--slate); font-size:0.96rem; }
+
+/* ---------- listings (3D tilt cards) ---------- */
+.listing-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:30px;
+}
+.listing-card{ perspective:1200px; }
+.listing-card-inner{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  transform-style:preserve-3d;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease;
+  box-shadow:0 1px 2px rgba(11,27,46,0.06);
+}
+.listing-card:hover .listing-card-inner{
+  transform:rotateX(6deg) rotateY(-6deg) translateY(-8px) scale(1.01);
+  box-shadow:0 34px 46px -18px rgba(11,27,46,0.32);
+}
+.listing-media{
+  position:relative;
+  aspect-ratio:4/3;
+  overflow:hidden;
+}
+.listing-media img{
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+.listing-card:hover .listing-media img{ transform:scale(1.06); }
+.listing-tag{
+  position:absolute;
+  top:14px; left:14px;
+  background:var(--navy);
+  color:var(--gold-light);
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.66rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  padding:6px 10px;
+  border-radius:2px;
+  box-shadow:0 8px 16px -6px rgba(0,0,0,0.4);
+}
+.listing-body{ padding:22px; transform:translateZ(20px); }
+.listing-price{
+  font-family:"Fraunces", serif;
+  font-size:1.3rem;
+  color:var(--gold-deep);
+}
+.listing-body h3{ margin-top:6px; font-size:1.1rem; color:var(--navy); }
+.listing-meta{ margin-top:6px; color:var(--slate); font-size:0.86rem; }
+.listing-link{
+  display:inline-block;
+  margin-top:14px;
+  font-size:0.86rem;
+  font-weight:600;
+  color:var(--navy);
+  border-bottom:1px solid var(--gold);
+  padding-bottom:2px;
+  transition:color .15s ease;
+}
+.listing-link:hover{ color:var(--gold-deep); }
+
+/* ---------- services (raised 3D cards) ---------- */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+}
+.service-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:38px 30px;
+  box-shadow:0 1px 2px rgba(11,27,46,0.05);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.service-card:hover{
+  transform:translateY(-8px) rotateX(3deg);
+  box-shadow:0 28px 40px -20px rgba(11,27,46,0.28);
+  border-color:var(--gold-light);
+}
+.service-card .key-glyph{ width:26px;height:26px; color:var(--gold); margin-bottom:22px; }
+.service-card h3{ font-size:1.28rem; margin-bottom:10px; color:var(--navy); }
+.service-card p{ color:var(--slate); font-size:0.95rem; margin:0; }
+
+/* ---------- process ---------- */
+#process{ background:var(--ivory); }
+.process-list{ display:grid; grid-template-columns:repeat(3, 1fr); gap:36px; }
+.process-step{ position:relative; padding-top:26px; border-top:1px solid var(--line); }
+.process-step .num{
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.78rem;
+  color:var(--gold-deep);
+  letter-spacing:0.06em;
+}
+.process-step h3{ margin-top:12px; font-size:1.18rem; color:var(--navy); }
+.process-step p{ margin-top:8px; color:var(--slate); font-size:0.95rem; }
+
+/* ---------- contact + inquiry form ---------- */
+.contact{ background:var(--white); }
+.contact-panel{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:0;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:0 30px 60px -36px rgba(11,27,46,0.35);
+}
+.inquiry-form{
+  padding:44px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.field{ display:flex; flex-direction:column; gap:6px; }
+.field label{
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.68rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--slate);
+}
+.field input,
+.field select,
+.field textarea{
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:12px 14px;
+  font-family:"Public Sans", sans-serif;
+  font-size:0.95rem;
+  color:var(--navy);
+  background:var(--ivory);
+  box-shadow:inset 0 1px 3px rgba(11,27,46,0.06);
+  transition:border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  outline:none;
+  border-color:var(--gold);
+  background:var(--white);
+  box-shadow:0 0 0 3px rgba(198,161,91,0.18);
+}
+.field textarea{ resize:vertical; min-height:96px; }
+.btn-submit{ align-self:flex-start; margin-top:6px; }
+.form-note{
+  font-size:0.78rem;
+  color:var(--slate);
+  margin:0;
+}
+.form-note code{
+  background:var(--ivory-deep);
+  padding:1px 6px;
+  border-radius:2px;
+  font-family:"IBM Plex Mono", monospace;
+}
+
+.keytag{
+  background:linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+  color:var(--white);
+  padding:44px 40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:26px;
+  position:relative;
+}
+.keytag-row{ display:flex; align-items:center; gap:14px; }
+.keytag-row .key-glyph{ color:var(--gold-light); }
+.keytag-row .lbl{
+  display:block;
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.68rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--gold-light);
+  margin-bottom:4px;
+}
+.keytag-row .val{ font-size:1.02rem; font-weight:600; color:var(--white); }
+.keytag-row a.val:hover{ color:var(--gold-light); }
+
+/* ---------- footer ---------- */
+footer{
+  padding:34px 0;
+  background:var(--navy-deep);
+  border-top:1px solid var(--line-on-navy);
+}
+footer .brand{ color:var(--white); }
+.footer-inner{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+.footer-inner .brand{ font-size:0.95rem; }
+.footer-inner .brand .key-glyph{ width:18px;height:18px; }
+footer .meta{
+  font-family:"IBM Plex Mono", monospace;
+  font-size:0.72rem;
+  color:rgba(255,255,255,0.5);
+  letter-spacing:0.04em;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px){
+  .listing-grid{ grid-template-columns:repeat(2, 1fr); }
+}
+@media (max-width: 860px){
+  .nav-links{
+    position:fixed; inset:64px 0 auto 0;
+    flex-direction:column; align-items:flex-start; gap:0;
+    background:var(--white);
+    border-bottom:1px solid var(--line);
+    padding:8px 28px 20px;
+    transform:translateY(-8px); opacity:0; pointer-events:none;
+    transition:opacity .2s ease, transform .2s ease;
+  }
+  .nav-links a{ width:100%; padding:12px 0; border-bottom:1px solid var(--line); }
+  .nav-links .nav-cta{ margin-top:14px; justify-content:center; }
+  .nav-toggle{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:38px;height:38px; border:1px solid var(--line); background:none; cursor:pointer;
+  }
+  .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after{
+    content:""; display:block; width:16px;height:1.5px; background:var(--navy); position:relative;
+  }
+  .nav-toggle span::before{ position:absolute; top:-5px; }
+  .nav-toggle span::after{ position:absolute; top:5px; }
+  #nav-check:checked ~ .nav-links{ opacity:1; transform:translateY(0); pointer-events:auto; }
+
+  .hero-inner{ grid-template-columns:1fr; }
+  .hero-tag-wrap{ justify-self:start; margin-top:8px; }
+  .hero-tag{ transform:none; }
+  .about-grid{ grid-template-columns:1fr; gap:40px; }
+  .listing-grid{ grid-template-columns:1fr; }
+  .services-grid{ grid-template-columns:1fr; }
+  .process-list{ grid-template-columns:1fr; gap:28px; }
+  .contact-panel{ grid-template-columns:1fr; }
+  .form-row{ grid-template-columns:1fr; }
+  .service-card:hover{ transform:translateY(-4px); }
+  .listing-card:hover .listing-card-inner{ transform:translateY(-4px); }
+}
+@media (max-width: 500px){
+  .wrap{ padding:0 20px; }
+  section{ padding:64px 0; }
+  .hero{ padding:76px 0 56px; }
+  .inquiry-form, .keytag{ padding:30px 24px; }
+  .hero-stats{ gap:22px; }
+}
