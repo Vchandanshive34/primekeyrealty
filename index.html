@@ -9,6 +9,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Public+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://vchandanshive34.github.io/primekeyrealty/style.css">
+<style>
+  .property-hub { padding: 84px 0; background: #f7f5f0; }
+  .property-hub .section-head { max-width: 680px; }
+  .property-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .8fr); gap: 28px; align-items: start; margin-top: 36px; }
+  .property-form, .property-card { background: #fff; border: 1px solid #ddd8ce; border-radius: 12px; padding: 28px; box-shadow: 0 8px 28px rgba(33, 31, 27, .06); }
+  .property-form h3 { margin: 0 0 8px; }
+  .form-note { margin: 0 0 22px; color: #625d55; }
+  .form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .form-field { display: grid; gap: 7px; }
+  .form-field.full { grid-column: 1 / -1; }
+  .form-field label { font-size: .85rem; font-weight: 700; color: #302d28; }
+  .form-field input, .form-field select, .form-field textarea { box-sizing: border-box; width: 100%; border: 1px solid #bbb4a9; border-radius: 6px; padding: 11px 12px; font: inherit; color: #27241f; background: #fff; }
+  .form-field textarea { min-height: 112px; resize: vertical; }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: 3px solid rgba(166, 122, 49, .25); border-color: #8b651f; }
+  .form-submit { margin-top: 20px; }
+  .form-message { margin: 14px 0 0; font-weight: 600; }
+  .property-listing { margin-top: 56px; }
+  .listing-toolbar { display: flex; justify-content: space-between; gap: 16px; align-items: end; margin-bottom: 20px; }
+  .listing-toolbar h3 { margin: 0; font-size: 1.7rem; }
+  .listing-toolbar select { min-width: 170px; padding: 10px; border: 1px solid #bbb4a9; border-radius: 6px; font: inherit; background: #fff; }
+  .property-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .property-card { padding: 0; overflow: hidden; }
+  .property-image { display: block; width: 100%; height: 180px; object-fit: cover; background: #d9d3c9; }
+  .property-card-body { padding: 20px; }
+  .property-meta { margin: 0; color: #776f64; font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+  .property-card h4 { margin: 8px 0; font-size: 1.25rem; }
+  .property-price { margin: 0 0 10px; font-weight: 700; color: #7a581c; }
+  .property-details { margin: 0; color: #5f594f; }
+  .empty-list { grid-column: 1 / -1; margin: 0; padding: 24px; text-align: center; border: 1px dashed #bcb4a8; color: #625d55; }
+  @media (max-width: 760px) { .property-layout { grid-template-columns: 1fr; } .property-grid { grid-template-columns: 1fr; } .form-grid { grid-template-columns: 1fr; } .listing-toolbar { align-items: start; flex-direction: column; } }
+</style>
 </head>
 <body>
  
@@ -106,7 +137,7 @@
           <h3>Buy</h3>
           <p>Find a property that fits your life, with straightforward guidance from search to signing.</p>
         </div>
-        <div class="service-card" id="add-property">
+        <div class="service-card">
           <svg class="key-glyph" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M4 12h9M13 12l-3.5-3.5M13 12l-3.5 3.5"/>
             <circle cx="18" cy="12" r="3"/>
@@ -148,6 +179,53 @@
           <h3>Make it official</h3>
           <p>We help you through paperwork and negotiation, right up to the final handover.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="property-hub" id="add-property">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">List Your Property</span>
+        <h2>Put your property in front of the right people.</h2>
+      </div>
+
+      <div class="property-layout">
+        <form class="property-form" id="property-form">
+          <h3>Tell us about your property</h3>
+          <p class="form-note">Share the essentials and we’ll add it to the property board.</p>
+          <div class="form-grid">
+            <div class="form-field"><label for="property-title">Property title</label><input id="property-title" name="title" placeholder="e.g. 3-bedroom apartment in Bandra" required></div>
+            <div class="form-field"><label for="property-intent">Listing type</label><select id="property-intent" name="intent" required><option value="">Choose one</option><option>For Sale</option><option>For Rent</option><option>New Project</option></select></div>
+            <div class="form-field"><label for="property-category">Category</label><select id="property-category" name="category" required><option value="">Choose one</option><option>Residential</option><option>Commercial</option></select></div>
+            <div class="form-field"><label for="property-location">Location</label><input id="property-location" name="location" placeholder="Area, city" required></div>
+            <div class="form-field"><label for="property-price">Price / rent</label><input id="property-price" name="price" placeholder="e.g. ₹85 lakh or ₹35,000/month" required></div>
+            <div class="form-field"><label for="property-area">Area</label><input id="property-area" name="area" placeholder="e.g. 1,100 sq ft"></div>
+            <div class="form-field full"><label for="property-image">Image URL <small>(optional)</small></label><input id="property-image" name="image" type="url" placeholder="https://example.com/property-photo.jpg"></div>
+            <div class="form-field full"><label for="property-description">Property description</label><textarea id="property-description" name="description" placeholder="Mention rooms, amenities, condition, and other highlights." required></textarea></div>
+            <div class="form-field"><label for="owner-name">Your name</label><input id="owner-name" name="name" autocomplete="name" required></div>
+            <div class="form-field"><label for="owner-phone">Phone number</label><input id="owner-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <button class="btn btn-primary form-submit" type="submit">Publish property</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="property-card">
+          <div class="property-card-body">
+            <span class="eyebrow">What happens next</span>
+            <h3>Simple, clear, and personal.</h3>
+            <p>Tell us what you have to offer. Your listing is added to the board, where interested buyers, tenants, and investors can discover it.</p>
+            <p><strong>Tip:</strong> A clear title, accurate price, and a good property photo receive the best response.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="property-listing" aria-labelledby="available-properties">
+        <div class="listing-toolbar">
+          <div><span class="eyebrow">Property Board</span><h3 id="available-properties">Available properties</h3></div>
+          <label>Filter listings <select id="listing-filter"><option value="all">All listings</option><option value="For Sale">For Sale</option><option value="For Rent">For Rent</option><option value="New Project">New Projects</option></select></label>
+        </div>
+        <div class="property-grid" id="property-grid" aria-live="polite"></div>
       </div>
     </div>
   </section>
@@ -199,6 +277,39 @@
     <span class="meta">&copy; 2026 Prime Key Realty. All rights reserved.</span>
   </div>
 </footer>
- 
+<script>
+  (() => {
+    const storageKey = 'prime-key-realty-properties';
+    const form = document.getElementById('property-form');
+    const grid = document.getElementById('property-grid');
+    const filter = document.getElementById('listing-filter');
+    const message = document.getElementById('form-message');
+    const escapeHtml = value => String(value).replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+    const getProperties = () => { try { return JSON.parse(localStorage.getItem(storageKey)) || []; } catch { return []; } };
+    const saveProperties = properties => localStorage.setItem(storageKey, JSON.stringify(properties));
+    const render = () => {
+      const selected = filter.value;
+      const properties = getProperties().filter(property => selected === 'all' || property.intent === selected);
+      grid.innerHTML = properties.length ? properties.map(property => {
+        const image = property.image ? `<img class="property-image" src="${escapeHtml(property.image)}" alt="${escapeHtml(property.title)}">` : '';
+        return `<article class="property-card">${image}<div class="property-card-body"><p class="property-meta">${escapeHtml(property.intent)} · ${escapeHtml(property.category)}</p><h4>${escapeHtml(property.title)}</h4><p class="property-price">${escapeHtml(property.price)}</p><p class="property-details">${escapeHtml(property.location)}${property.area ? ` · ${escapeHtml(property.area)}` : ''}</p><p class="property-details">${escapeHtml(property.description)}</p></div></article>`;
+      }).join('') : '<p class="empty-list">No properties have been added yet. Be the first to list yours.</p>';
+    };
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      const properties = getProperties();
+      properties.unshift({ ...data, createdAt: Date.now() });
+      saveProperties(properties);
+      form.reset();
+      message.textContent = 'Your property has been published on this device.';
+      filter.value = 'all';
+      render();
+      document.getElementById('available-properties').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    filter.addEventListener('change', render);
+    render();
+  })();
+</script>
 </body>
 </html>
